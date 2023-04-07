@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Life simulator</title>
+  </head>
+  <body>
+    <h1 id="siteHeader">Simulate your life!</h1>
+    <main id="main">
+      <dialog id="youAreDead">
+        <p id="deadMessage">You are dead!!!</p>
+        <p id="congratulations">Congratulations, you spent all of your remaining years staring at a screen.</p>
+        <p id="doOver">Want a do-over?</p>
+        <button id="resetSimulationButton">Redo</button>
+      </dialog>
+      <div id="ageInputContainer">
+        <p id="ageInputText">Enter your age:</p>
+        <input id="ageInput" type="number"/>
+        
+      </div>
+      <p id="ageFeedback"></p>
+      <div id="optOutOfAge">
+        <span id="or">Or</span>
+        <span>
+        <input id="noAgeInput" type="checkbox"/>
+        <label id="ratherNotSay" for="noAgeInput">I'd rather not say</label>
+      </span>
+      </div>
+      <div id="runSimulationButtonWrapper">
+        <button id="runSimulationButton">Run simulation</button>
+      </div>
+      <div id="ageSimulationResult">
+        <p id="ageMessage">Based on your current age of 
+          <strong id="currentAge"></strong>, you will live to age
+          <strong id="finalAge"></strong>
+        </p>
+        <p id="ageMessage2">
+          That's <strong id="yearsRemaining"></strong>
+          years remaining until you die on <strong id="dieDate"></strong> at 
+          <strong id="dieTime"></strong>
+        </p>
+        <div id="currentTimeContainer">
+
+            <p id="currentTimeMessage">Watch the time pass until you expire: 
+            <strong id="currentTime"></strong>
+          </p>
+          <div id="timeSpeedInput">
+
+            <label>
+              <span>Time passing too slow? Try sliding the</span>
+              time multiplier:
+            </label>
+            <input
+            id="timeSpeedSlider"
+            class="w-full"
+            type="range"
+            id="slider"
+            name="slider"
+            tabindex="0"
+            value="1"
+            min="1"
+            max="500000000"
+            step="10"
+         />
+         <span id="timeMultiplierValue">x 1</span>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+    <!-- <canvas id="canvas" width="1px" height="1px"></canvas> -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
