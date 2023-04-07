@@ -24,7 +24,7 @@ const appState = {
     lastSimulationStartTime: 0,
     simulationEndDate: 0,
     simulationEnded: false,
-    simulationSpeed: 1,
+    timeSpeed: 1,
     timeSpeedUpdated: false,
     lastTimeUpdate: 0,
     simulationStarted: false,
@@ -105,8 +105,8 @@ const resetSimulation = () => {
     appState.simulationStarted = false;
     appState.timeSpeedUpdated = false;
     appState.lastTimeUpdate = 0;
+    appState.lastTimeCheck = 0;
     appState.simulationEnded = false;
-    appState.simulationSpeed = 1;
     appState.timeSpeed = 1;
     appState.simulationEnded = false;
     appState.showTime = false;
