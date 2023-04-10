@@ -31,8 +31,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3em;
+  line-height: 1;
 }
 
 
@@ -74,11 +74,56 @@ button:focus-visible {
   margin: 0px;
 }
 
+#header {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: 2rem;
+}
+
+#aboutButton {
+  position: absolute;
+  right: .25rem;
+  top: .25rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  max-width: 5rem;
+  max-height: 1.75rem;
+  margin: 0rem;
+}
+
+#aboutContent {
+  width: 80%;
+  position: absolute;
+  top: .5rem;
+  left: 0rem;
+
+}
+
+#closeAboutContent {
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  max-height: 2.5rem;
+  max-width: 5rem;
+}
+#about {
+  margin-top: 2rem;
+  text-align: left;
+  padding-left: .5rem;
+}
+
 #main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 100%;
+}
 
+#contentWrapper {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom: 2rem;
+  
 }
 
 #ageInputContainer {

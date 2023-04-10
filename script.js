@@ -282,3 +282,25 @@ timeSpeedSlider.onchange = function() {
 
     timeMultiplierValue.textContent = timeMultiplerString;
 }
+
+const addAboutButtonListener = () => {
+    const aboutButton = document.getElementById('aboutButton');
+    aboutButton.addEventListener('click', () => {
+        showAboutContent();
+    });
+    const closeAboutButton = document.getElementById('closeAboutContent');
+    closeAboutButton.addEventListener('click',() => {
+        closeAboutContent();
+    })
+}
+
+const showAboutContent = () => {
+    document.getElementById('aboutContent').show();
+
+}
+
+const closeAboutContent = () => {
+    document.getElementById('aboutContent').close();
+}
+
+addAboutButtonListener();

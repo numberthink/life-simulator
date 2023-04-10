@@ -26,4 +26,4 @@ Finally, given current life expectancy limits, I kept the max age as 141. But I 
 
 ## Frontend
 
-For the frontend I used [Vite](https://vitejs.dev/). 
+For the frontend I used [Vite](https://vitejs.dev/). Live site lives [here](https://life-simulator.numberthink.com).
